@@ -1,0 +1,1992 @@
+/*Setup*/
+
+    *{
+        padding: 0%;
+        margin: 0%;
+        box-sizing: border-box;
+        font-family: Muli,'Montserrat', sans-serif;
+    }
+    html{
+        font-size: 16px;
+    }
+        /*Variaveis*/
+
+    :root{
+        --cor-verde: #1FBA2F;
+        --cor-azul: #1D84C5;
+        --cor-cta: #2BC48B;
+        --fundo01: #F8F8FA;
+        --detalhes: #176ba0;
+        --amarelo:#FCB813;
+    }
+        /*Fonts*/
+    @font-face{
+        font-family: Muli;
+        src: url( ../font/Muli.ttf);
+    }
+
+
+    .active{
+        display:flex;
+        }
+
+/*Fim do Setup*/
+
+/*Style Global*/
+
+    header{
+        width: 100%;
+        height: 6rem;
+        background-color:white;
+        z-index:10;
+        display: flex;
+        position: relative;
+        box-shadow: 0px 0px 10px 1px rgb(175, 175, 175);
+    }        
+
+    body{
+        background-color: #f9f9fa;
+    }
+    main{
+
+    }
+
+    footer{
+
+    }
+
+    .container{
+        max-width: 1140px;
+        height: ;
+        margin: auto;
+        background-color:;
+        position: relative;
+    }
+
+    a{
+        list-style: none;
+        text-decoration: none;
+        color: black;
+    }
+
+/*Fim style Global*/
+
+
+/*Cabeçalho*/
+
+
+    header .container{
+        width: 100%;
+        background-color: ;
+        height: 5rem;
+        line-height: ;
+        padding: rem;
+    }
+
+
+    .topo{
+        background-color: ;
+        display: flex;
+        justify-content:space-between;
+        flex-direction: row;
+        max-width: 100vw;
+        align-items: center;
+        margin: auto;
+        margin-top: 1rem;
+        margin-bottom: rem;
+        text-transform: uppercase;
+        position: relative
+    }
+
+    .logo{
+        background-color: ;
+        margin-left: 2rem;
+    }
+
+    .logo a img{
+        width: 8rem;
+
+    }
+
+    .navegador{
+        width: ;
+        background-color: ;
+        margin-right:2rem ;
+    }
+    .navegador nav{
+        background-color: ;
+        
+    }
+    #menu{
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+    
+    nav a{
+        width: 8rem;
+        background-color: ;
+        flex: 1;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 0.8rem;
+        margin: 0 auto;
+        text-align: center;
+        font-weight: 500;
+        color: #176ba0;
+    }
+    
+    .navegador button{
+        display: flex;
+        width: 10rem;
+        height: 2rem;
+        flex-direction: row;
+        padding: 1.2rem;
+        text-transform: uppercase;
+        align-items: center;
+        font-size: 80%;
+        background-color: var(--cor-cta);
+        border: transparent;
+        border-radius: 4px;
+        color: white;
+        font-weight: 600;
+    }
+
+    .navegador img{
+        width: 10px;
+        margin-left:;
+        margin-right: 5px;
+        color: white;
+    }
+    button:hover{
+        cursor: pointer;
+    }
+
+
+    .navegador .botao-wa img{
+        width: 1.2rem;
+        margin-left:;
+        margin-right: 10px;
+        color: white;   
+    }
+    .navegador button span{
+        font-size: 0.7rem;
+    }
+
+        /*Menu Responsivo*/
+            #btn_menu_responsivo{
+                width: 26px;
+                height: 26px;
+                display: flex;
+                box-shadow: 0px 0px 0px 0px;
+                margin-right: 10%;
+            }
+            .btn_menu-responsivo{
+                display:none;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                width: 26px;
+            }
+            .btn_menu-responsivo--bloco{
+                width: 100%;
+                height: 3px;
+                background-color:  var(--cor-azul);
+                margin-top: 4px;
+                position: relative;
+                background-color: ;
+                
+            }
+            
+            #btn_menu_responsivo:hover{
+                cursor: pointer;
+            }
+        /*Fim Menu Responsivo*/
+
+
+    
+
+
+/*Fim Cabeçalho*/
+
+/*Banner - Topo*/
+
+    .banner{
+        width: calc(100vw -);
+        height:calc(100vh - 100px);
+        background-image: url('../img/BG.jpg');
+        background-size: cover;
+        background-position: bottom;
+        margin-top: 0.5rem;
+        overflow: hidden;
+        }
+        .banner .container{
+            width: 100%;
+            height: 100%;
+            align-items: center;
+            text-align: center;
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+            .banner-int{
+                background-color: rgba(0, 0, 0, 30%);
+                width: 100%;
+                height: 100%;
+            }
+            .banner-area{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-around;
+            }
+
+    .banner-info{
+        max-width: 545px;
+        height: 100%;
+        background-color:;
+        margin-top: 10vh;
+        text-align: left;
+        }
+        .banner-info div{
+            margin-top: 1.5rem;
+
+        }        
+
+            
+            .banner-info::after{
+                content: '';
+                height: 0.4rem;
+                width: 3rem;
+                border-radius: 1rem;
+                margin: 0 auto;
+                position: absolute;
+                top:5rem; 
+                background-color: #FFF;
+                transform:translate(0,-100%);
+            }
+
+
+            .banner-info--title,
+            .banner-info--subtitle{
+                color: white;
+            }
+            .banner-info--title{
+                font-size: 3.5vw;
+                font-weight: 800;
+            }
+            .banner-info--subtitle{
+                font-size: 1.2rem;
+                font-weight: 500;
+                width: 100%;
+            }
+
+            /*Background do texto*/
+            .backspam{
+                z-index:1;
+                position: relative;
+            }
+            .backspam1{
+                z-index:1;
+                position: relative;
+            }
+            .backspam::after{
+                top:30%;
+                left: 0;
+                position:absolute ;
+                content: '';
+                display: block;
+                width: 100%;
+                height: 55%;
+                background-color:#FCB813 ;
+                z-index: -1;
+                margin: 0 auto;
+            }
+
+            .backspam1::after{
+                top:30%;
+                left: 0;
+                position:absolute ;
+                content: '';
+                display: block;
+                width: 100%;
+                height: 55%;
+                background-color: #FCB813;
+                z-index: -1;
+                margin: 0 auto;
+            }
+            
+            .botao-wa{
+                display: flex;
+                width: 100%;
+                height:4rem;
+                flex-direction: row;
+                padding-left: 1rem;
+                padding-right: 1rem;
+                align-items: center;
+                justify-content: center;
+                font-size: 1.5rem;
+                background-color: var(--cor-cta);
+                border: transparent;
+                border-radius: 4px;
+                color: white;
+                font-weight: 600;
+            }
+
+            .botao-wa img{
+                width: 1.5rem;
+                margin-left:;
+                margin-right: 10px;
+                color: white;   
+            }
+            button:hover{
+                cursor: pointer;
+            }
+
+
+            .banner-img{
+                max-width:560px;
+                height: 100%;
+                -webkit-mask-image: linear-gradient(to top, transparent 0%, rgb(255, 255, 255));
+                transform: ;
+                background-color:;
+                z-index: 1;
+            }
+            .banner-img img{
+                width: 36rem;
+            }
+
+/*Fim Banner Topo*/
+
+
+/*Simulador*/
+
+    .simulador{
+        width: 100%;
+        height: auto;
+        background-color: #FFF;
+        
+    }
+    .simulador .container{
+        height: auto;
+        width: auto;
+        background-color: #FFF;
+        padding: 2rem;
+        margin-bottom: 4rem;
+
+    }
+
+        .simulador-area{
+            display: flex;
+            justify-content:   space-between;
+            align-items: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+            padding: 2rem;
+            margin: 1rem;
+            background: #e0e0e0;
+            border-radius: 18px;
+            border-bottom-left-radius: 0;
+            background: #e0e0e0;
+            box-shadow:  10px 10px 20px #cecece,
+                         -10px -20px 10px #ffffff;
+        }
+            
+            .simulador-area--title{
+                font-size:2rem;
+                background-color:;
+                flex: 1;
+                margin-bottom:2rem;
+                line-height:100%;
+            }
+
+                .simulador-area p{
+                    flex: 1;
+                    font-weight: 700;
+                    margin: 0%;
+                    color:#176ba0;
+                }
+
+            .simulador-area--simulador{
+                display: flex;
+                align-items: stretch;
+                flex: 1;
+                background-color: ;
+                flex-wrap: nowrap;
+                width: 100%;
+                margin-right: 3rem;
+                border: 0.2px solid #176ba0cb;
+                border-radius: 0.2rem;
+            }
+
+                .simulador-area--simulador span{
+                    color: var(--cor-azul);
+                    
+                }
+                .simulador-area--simulador input{
+                    background-color: transparent;
+                    border: transparent;
+                    width: 100%;
+                }
+                .simulador-area--simulador input::placeholder{
+                    color: #ccc;
+                    font-weight: 50;
+                    font-size: 0.8em;
+                    align-items: center;
+                    
+                }
+                .input-valor:focus{
+                    outline: none;
+                }
+
+                .simulador-area--simulador button{
+                    width: 20rem;
+                    font-size: 1em;
+                    color: #fff;
+                    background-color:#176ba0;
+                    padding-left: 1rem;
+                    padding-right: 1rem;
+                    font-weight: 700;
+                    border: transparent;
+                    border-radius: 0rem;
+                    border-top-left-radius: 0;
+                    border-bottom-left-radius: 0;
+                    padding: rem; 
+                }
+
+                .simulador, .input-valor, .input-valor, .input-button{
+
+                    font-size: 1.25rem;
+                    padding: 0.2rem 1rem;
+                }
+
+
+/*Fim do Simulador*/
+
+/*Vantagens*/
+
+    .vantagens{
+        width: 100%;
+        height: auto;
+        background-color: #f9f9fa;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        }
+
+        .vantagens .container::after{
+            content: '';
+            height: 0.5rem;
+            width: 10%;
+            border-radius: 1rem;
+            background-color: #176ba0;
+            margin: 0 auto;
+            position: relative;
+            bottom: -6rem;
+        }
+        
+        .vantagens .container{
+            display: flex;
+            flex-direction:column ;
+            align-items: ;
+            padding-bottom: 5rem;
+            }
+
+            .down-arrow{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                top: -5rem;                
+                margin-bottom: 2rem;
+                }
+                .down-arrow--area{
+                    display: flex;
+                    width: 4rem;
+                    height: 4rem;
+                    border-radius: 50%;
+                    background-color: ;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50px;
+                    background: #e9e8e8;
+                    box-shadow:  0px 0px 60px #d4d4d4,
+                                0px 0px 20px #b4b4b4;    
+                    }
+                    .down-arrow--area-int{
+                        display: flex;
+                        width: 3rem;
+                        height: 3rem;
+                        border-radius: 50%;
+                        background-color: rgb(192, 9, 109);
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 50px;
+                        background: #e6e5e5;
+                        box-shadow:  -1px -1px 6px #d4d4d4,
+                                    1px 6px 6px #bebebe;
+                        } 
+                        .down-arrow img{
+                            display: flex;
+                            width: 1.5rem;
+                            align-items: center;
+                            justify-content: center
+                            
+                        }
+    .container-area{
+        margin: ;
+        background-color: ;
+
+    }
+
+        .container-area--row{
+            background-color: ;
+            height: 100%;
+            width:100% ;
+            padding: 1rem;
+        }
+
+        .container-area--row-1{
+            display: flex;
+            width: 100%;
+            flex-direction:row;
+            justify-content: space-between;
+            flex-wrap:wrap;
+            background-color: ;
+            margin: 1rem;
+            margin: auto;
+            }
+            
+                
+
+
+            .block-1{
+                max-width: 100%;
+                max-height: 8rem;
+                border: 0.2px solid #176ba0cb;
+                border-radius: 0.4rem;
+                display: flex;
+                flex: 1;
+                justify-content: space-around;
+                flex-wrap:nowrap;
+                flex-direction: row;
+                align-items: center;
+                margin-left: 0.2rem;      
+                margin-right: 0.2rem;         
+                }
+                .block-1--title{
+                    ;
+                    }
+                    .block-1 .title{
+                        color: #176ba0;
+                    }
+                    .block-1 span{
+                     
+                    }
+                    .block-1 img{
+                        display: flex;
+                        position: ;
+                        margin-top: -5rem;
+                        width: 15rem;
+                    }
+
+
+            .block-2{
+                max-width: 100%;
+                max-height:8rem;
+                border: 0.2px solid #176ba0cb;
+                border-radius: 0.4rem;
+                display: flex;
+                flex: 1;
+                justify-content: space-around;
+                flex-wrap: nowrap;
+                flex-direction: row;
+                align-items: center;
+                margin-left: 0.2rem;      
+                margin-right: 0.2rem;
+                }
+                .block-2--title{
+        
+                    }
+                    .block-2 .title{
+                            color: #176ba0;
+                            
+                        }
+                        .block-2 span{
+                                
+                            }
+                            .block-2 img{
+                                display: flex;
+                                position: ;
+                                margin-top: -8rem;
+                                width: 15rem;
+                            }
+
+
+
+/*Fim Vantagens*/
+
+/*Vantagens Exclusivas*/
+
+    /*Setup*/
+        .exclusiva-area .title{
+            font-size:1em;
+        }
+        .exclusiva-area .sub-title{
+            color: #212529;
+        }
+    /*Fim Setup*/
+
+
+
+    .vantagens-exclusivas{
+        width: 100%;
+        height: auto;
+        background-color:#f9f9fa ;
+        position: relative;
+        padding-bottom: 5rem
+    }
+
+    .container{
+        background-color: ;
+        padding-bottom: 2rem;
+        
+        }
+        .vantagens-exclusivas .main-title{
+            color: #23416e;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            margin-top: 1.5rem;
+            margin-bottom: 3rem;
+            font-size: 2em;
+        }
+
+        .exclusiva-area{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            background-color: ;
+            max-width: 1100px;
+            margin:  0 auto;
+            flex-wrap: wrap;
+            padding-bottom:0.2rem;
+            background-color:;
+            position: relative;
+            }
+
+            .exclusiva-area::before{
+                
+                content: '';
+                display: block;
+                width: 150px;
+                height: 150px;
+                position:absolute;
+                top:; 
+                left:9rem; 
+                bottom:1em;
+                
+                transform: translate(-20%,20%);
+                background-image: url('../img/icon/detail.png');
+                background-repeat: no-repeat;
+                z-index: ;
+            }
+
+            .exclusiva-area .exclusividade--1{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                flex-wrap: wrap;
+                align-items: center;
+                width: 200px;
+                height: 240px; 
+                margin-left: 0.5rem;
+                margin-right: 0.5;
+                margin-bottom: 0.5rem;
+                background-color: #FFF;
+                padding: ;
+                border-radius: 20px;
+                transition: all 0.2s linear;
+                z-index: ;
+                }
+                .exclusividade--1:hover{
+                    margin-top: -20px;
+                    
+                }
+                .exclusividade--1 img{
+                    width: 5rem;
+                    margin-bottom: 0.5rem;
+                    }
+                .exclusividade--1 h3{
+
+                }
+                ex
+                .exclusividade--1 h3,p{
+                    margin-top: 1rem;
+                }    
+                .exclusividade--1 :hover{
+                    
+                }
+                .exclusividade--1::after{
+                    content: '';
+                    height: 0.3rem;
+                    width: 15%;
+                    border-radius: 1rem;
+                    margin: 0 auto;
+                    position: relative;
+                    bottom: -1.7rem; 
+                    background-color: var(--detalhes);
+                    transform:translate(-50,0);
+                }
+
+
+/*Fim Vantagens Exclusivas*/
+
+/*Obter Emprestimo*/
+
+    
+    .obter-emprestimo{
+        background-color: white;
+    }
+
+    .obter-emprestimo .container{
+        background-color:white ;
+        padding: 0;
+        padding-bottom: 1rem;
+    }
+
+    .obter-emprestimo .down-arrow{
+        top: -1.9999900000000004rem;
+        display: 50%;
+    }
+
+    .obter-emprestimo--area{
+        display: flex;
+        flex-direction: row;
+        justify-content:center;
+        background-color: ;
+        flex-wrap: wrap;
+    }
+
+    /*Coluna da Direita */
+
+    .obter-emprestimo--area-direita{
+        background-color: ;
+        max-width: 450px;
+    }
+
+    .obter-emprestimo--area-direita img{
+        width: 100%;
+        height:;
+        background-color: ;
+    }
+
+
+    /*Coluna da Escquerda*/
+
+
+    .obter-emprestimo--area-esquerda{
+        background-color: ;
+        max-width: 550px;
+        position: relative;
+    }
+
+    /* Titulos */
+
+    .obter-emprestimo--area-esquerda .titulo{
+        color: #23416E;
+        font-weight:900;
+        margin-bottom: 2rem;
+        position: relative;
+        font-size: 2rem;
+    }
+    .obter-emprestimo--area-esquerda .titulo::before{
+        content: '';
+        position: absolute;
+        top: -2rem;
+        width: 2rem;
+        height: 0.5rem;
+        border-radius: 5px;
+        background-color: #FCB813;
+    }
+
+
+    .obter-emprestimo--area-esquerda .subtitulo{
+        color: #FCB813;
+        font-size: 2.5rem;
+        font-weight:900;
+        margin-top: 3rem;
+    }
+
+
+    /* Grid */
+
+    .obter-emprestimo--area-esquerda-grid{
+        background-color: ;
+        display: grid;
+        grid-template-columns: 50px 200px 50px 200px;
+        gap: 10px;
+        align-items: center;
+        margin-left: 25px;
+        width: 100%;
+
+    }
+
+    .item{
+        
+    }
+    .item1,.item3,
+    .item5,.item7,
+    .item9,.item11{
+        font-size: 4rem;
+        color: #FCB813;
+        font-weight: 900;
+        margin-left: -10px;
+    }
+    .item2,.item4,
+    .item6,.item8,
+    .item10,.item12{
+        color: #23416e;
+        font-size: 1rem
+    }
+
+/*Fim Obter Emprestimo*/
+
+/* Duvidas Frequentes */
+.duvidas-frequentes {
+    background-color: ;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-bottom: 3rem;
+}
+.duvidas-frequentes--area{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.duvidas-frequentes--area .titulos{
+    margin-bottom: 2rem;
+}
+.duvidas-frequentes--area span{
+    color: #FCB813;
+}
+.duvidas-frequentes--area h1{
+    color:#23416e;
+}
+
+/*Caixas Duvidas*/
+.duvidas{
+    display: flex;
+    justify-content: center;
+    text-align: start;
+    background-color: ;
+    width: 100%;
+    flex-wrap: wrap
+}
+.duvida{
+    background-color: ;
+    margin: 5px;
+    border: 1px solid rgba(209, 209, 209, 0.295);
+    border-radius: 5px;
+    flex: ;
+    padding: 1rem;
+    position: relative;
+    height: auto;
+    width:30rem;
+    color:#23416e;
+}
+h5::after{
+    content: url(../img/icon/seta-baixod.png);
+    margin-left: 0px;
+    position: absolute;
+    right: 15px;
+}
+
+.resposta1,.resposta2,.resposta3,
+.resposta4,.resposta5,.resposta6,
+.resposta7,.resposta8{
+    display:none;
+}
+.ativo{
+    display: block;
+    font-size: 0.6rem;
+}
+
+/* Fim Duvidas Frequentes*/
+
+
+/* Depoimenteos */
+
+.depoimentos{
+    border-top: 1px solid rgba(204, 203, 203, 0.295);
+}
+.depoimentos .container{
+
+}
+
+.depoimentos .botao-wa{
+    width: 15rem;
+    height: 3rem;
+    margin: 0 auto;
+    margin-top: 0rem;
+    position: relative;
+    top: -1.5rem;
+}
+
+
+
+
+
+.depoimentos--area{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+.depoismentos--ares-titulo{
+    background-color: ;
+    height: auto;
+    padding: 1rem;
+}
+    .depoismentos--ares-titulo1{
+        font-size: 2rem;
+        margin-top: 3rem;
+    }
+    .depoismentos--ares-subtitulo2{
+        font-weight: 300;
+    }
+
+    .depoismentos--ares-titulo1::before{
+        content: '';
+        width: 2.5rem;
+        height: 10px;
+        border-radius: 10px;
+        background-color: var(--amarelo);
+        position: absolute;
+        top: 5rem;
+    }
+
+
+.depoimentos{
+    display: flex;
+    flex-wrap: wrap;
+    border: transparent;
+}
+
+.depoimentos--area-d1{
+    background-color: ;
+    min-width: 298px;
+    max-width: 313px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+    padding: 1rem;
+    background-color: white;
+    margin: 1rem;
+    border-radius: 5px;
+}
+.depd2{
+    background-color: ;
+    
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+    padding: 1rem;
+    background-color: white;
+    margin: 1rem;
+}
+
+    @media (max-width:688px){
+        .depoimentos--area-d1{
+            max-width: 100%;
+        }
+        .depd2{
+            width: 100%;
+        }
+    }
+
+
+
+
+
+    .perfil{
+        background-color: ;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+
+        .perfil .img{
+            width: 57px;
+            margin-left: -20px;
+        }
+        .perfil .informacoes{
+            display: flex;
+            flex-direction: column;
+            margin-left: -30px;
+        }
+
+            .nome p{
+                margin: 0;
+                font-weight: 700;
+            }
+            .profissao p{
+                margin: 0;
+                font-weight: 800;
+                color: var(--amarelo);
+            }
+        
+        .informacoes img{
+
+        }
+        
+
+
+    .estrelas{
+        margin-left: 10px;
+        margin-top: 1rem;
+    }
+    .conteudo{
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    .conteudo{
+        margin-top: 1rem;
+        font-size: 100%;
+        color: black;
+    }
+
+
+
+/* Fim de Depoimentos */
+
+
+
+/*  Simulador Rodape */
+
+    /*Simulador*/
+
+    .simulador-whats-2{
+        width: 100%;
+        height: auto;
+        background-color: #FFF;
+        
+    }
+    .simulador-whats-2 .container{
+        height: auto;
+        width: auto;
+        background-color: #FFF;
+        padding: 2rem;
+
+    }
+
+        .simulador-area--rodape2{
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+            padding: 2rem 1.5rem;
+            background: #e0e0e0;
+            border-radius: 18px;
+            background: linear-gradient(#23416E 0,#00316c -100%);
+            align-items:center ;
+        }
+            
+            .simulador-area--title2{
+                background-color:;
+                display: flex;
+                flex-direction: column;
+                line-height:100%;
+                flex: 1; 
+            }
+            .simulador-area--titulo1{
+                color: white;
+                font-weight: 700;
+                font-size: 2rem;
+                margin-bottom: 0.9rem;
+            }
+            .simulador-area--titulo2{
+                color: white;
+                font-weight: 300;
+                font-size: 1rem;
+            }
+
+
+            .simulador-area--simulador{
+                display: flex;
+                align-items: stretch;
+                flex: 1;
+                background-color: ;
+                flex-wrap: nowrap;
+                max-width: 410px;
+                margin-right: 3rem;
+                border: 0.2px solid #176ba0cb;
+                border-radius: 0.2rem;
+            }
+
+                .simulador-area--simulador span{
+                    color: var(--cor-azul);
+                    background-color:white;
+                }
+                .simulador-area--simulador input{
+                    background-color:white;
+                    border: transparent;
+                    width: 100%;
+                }
+                .simulador-area--simulador input::placeholder{
+                    color: #ccc;
+                    font-weight: 50;
+                    font-size: 0.8em;
+                    align-items: center;
+                    
+                }
+                .simulador-area--simulador input::-moz-focus-outer{
+                    border: transparent;
+                }
+
+                .simulador-area--simulador button{
+                    width: 20rem;
+                    font-size: 1em;
+                    color: #fff;
+                    background-color:var(--cor-cta);
+                    padding-left: 1rem;
+                    padding-right: 1rem;
+                    font-weight: 700;
+                    border: transparent;
+                    border-radius: 0rem;
+                    border-top-left-radius: 0;
+                    border-bottom-left-radius: 0;
+                    padding: rem;
+                    
+                }
+
+                .simulador, .input-valor, .input-valor, .input-button{
+
+                    font-size: 1.25rem;
+                    padding: 0.2rem 1rem;
+                }
+
+                @media (max-width:900px){
+
+                    .simulador-whats-2 .container{
+                        margin:0rem;
+                        padding: 0.5rem;
+                    }
+
+
+                    .simulador-area--rodape2{
+                        display: flex;
+                        flex-direction: column;
+                        max-width: 100%;
+                        padding: 0.5rem 01rem;
+                        justify-content: center;
+                        align-items: flex-start;
+                    }
+                    .simulador-area--rodape .simulador-area--title{
+                        margin: 0;
+
+                    }
+                    .simulador-area--title2{
+                        font-size: 100%;
+                        padding: 0;
+                        margin-bottom: 0.5rem;
+                    }
+
+                    .simulador-area--titulo1{
+                        font-size: 100%;
+                    }
+                    .simulador-area--titulo2{
+                        font-size: 60%;
+                    }
+
+                    .simulador-area--rodape .simulador-area--simulador{
+                        margin-bottom: 0.5rem;
+                        margin-top: 0.5rem;
+                    }
+                    .btn-simulador2{
+                        font-size: 50%;
+                    }
+                    
+                }
+
+
+/*Fim do Simulador*/
+
+
+/* FIm Simulador do Rodape*/
+
+
+
+
+
+
+/* Copyright*/
+
+.copy .container{
+    background-color: ;
+    border-top: 1px solid rgba(204, 203, 203, 0.295);
+    padding-top: 2rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+    color: rgba(204, 203, 203, 0.911);
+}
+
+.logo-rodape{
+    width: 5rem;
+    margin: 0;
+}
+
+
+
+
+/* Politica de Regras*/
+
+.politica-de-regra .container{
+    padding: 1rem;
+}
+
+.politica-de-regras-texto{
+    color: rgba(204, 203, 203, 0.911);
+    font-size: 0.9em;
+}
+
+
+
+
+/* Botão WA*/
+.ping {
+	-webkit-animation: ping 0.9s ease-in-out infinite both;
+	        animation: ping 0.9s ease-in-out infinite both;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2022-9-19 14:27:43
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation ping
+ * ----------------------------------------
+ */
+ @-webkit-keyframes ping {
+    0% {
+      -webkit-transform: scale(0.2);
+              transform: scale(0.2);
+      opacity: 0.8;
+    }
+    80% {
+      -webkit-transform: scale(1.2);
+              transform: scale(1.2);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: scale(2.2);
+              transform: scale(2.2);
+      opacity: 0;
+    }
+  }
+  @keyframes ping {
+    0% {
+      -webkit-transform: scale(0.2);
+              transform: scale(0.2);
+      opacity: 0.8;
+    }
+    80% {
+      -webkit-transform: scale(1.2);
+              transform: scale(1.2);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: scale(2.2);
+              transform: scale(2.2);
+      opacity: 0;
+    }
+  }
+  
+
+.btn-fixo{
+    background-color: #25d366;
+    width: 74px;
+    height: 74px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 50%;
+}
+
+
+.leowp-whatsapp-button{
+    z-index: 10;
+}
+
+
+/* Seta para Cima*/
+
+/* From uiverse.io by @mrhyddenn */
+
+.scrolldown {
+    cursor: pointer;
+    position: fixed;
+    bottom: 25px;
+    margin-left: 20px;
+    margin-right: ;
+    transform: rotate(180deg);
+    z-index: 1000;
+    display:none ;
+  }
+    
+  @keyframes scrolldown-anim {
+    0% {
+      opacity: 0;
+      height: 6px;
+    }
+  
+    40% {
+      opacity: 1;
+      height: 10px;
+    }
+  
+    80% {
+      transform: translate(0, 20px);
+      height: 10px;
+      opacity: 0;
+    }
+  
+    100% {
+      height: 3px;
+      opacity: 0;
+    }
+  }
+  
+  .chevrons {
+    padding: 6px 0 0 0;
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .chevrondown {
+    margin-top: -6px;
+    position: relative;
+    border: 1px solid rgb(10, 11, 66);
+    border-radius: 4px;
+    border-width: 0 5px 5px 0;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    transform: rotate(45deg);
+  }
+  
+  .chevrondown:nth-child(odd) {
+    animation: pulse54012 1000ms ease infinite alternate;
+  }
+  
+  .chevrondown:nth-child(even) {
+    animation: pulse54012 1000ms ease infinite alternate 250ms;
+  }
+  
+  @keyframes pulse54012 {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 0.8;
+    }
+  }
+
+
+
+
+/*Responsivo */
+
+    /* Responsivo de 1280 até 2500*/
+
+    @media (min-width:1280px) {
+        .btn_menu-responsivo,.navegador-responsivo{
+            display: none;
+        }
+    
+    }
+    @media (min-width:900px) and (max-width:1280px){
+        .btn_menu-responsivo,.navegador-responsivo{
+            display: none;
+        }
+        .banner{
+            height:calc(100vh + 200px);
+        }
+        .banner-info--title{
+            font-size: 3.5rem;
+        }
+        .banner-info--subtitle{
+            font-size: 1.5rem;
+        }
+        .banner-area button{
+            width: 30rem;
+        }
+        .banner-img img {
+            width: 36rem;
+            margin-top: 2rem;
+        }
+        .simulador-area--rodape2{
+            padding: 1.5rem;
+          }
+        .simulador-area--titulo1{
+            font-size: 100%;
+        }
+        .simulador-area--rodape2{
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: row;
+          }
+    }
+
+    @media (min-width:767px) and (max-width:899px){
+        
+        .banner-area{
+            justify-content: center;
+            width: 100%;
+        }
+        .banner-info{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            padding: 0;
+        }
+        .banner-info--title{
+            font-size: 3.5rem;
+        }
+        .banner-info--subtitle{
+            font-size: 1.5rem;
+        }
+        .banner-area button{
+            width: 30rem;
+        }
+        
+        .navegador{
+            display: none;
+        }
+        .navegador-responsivo{
+            width: 100%;
+            position: absolute;
+            top: 5rem;
+            background-color: white;
+            display: none;
+        }
+        .navegador-responsivo nav{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        .navegador-responsivo a{
+            padding: 0.5rem;
+            font-size: 1rem;
+            font-weight: 600;
+        }
+        .navegador-responsivo .button{
+            display: none;
+        }
+        .navegador-responsivo a:hover{
+            cursor: pointer;
+            background-color: #ccc;
+        }
+        .active{
+            display: flex;
+        }
+
+        .btn_menu-responsivo{
+            display: flex;
+        }
+
+
+
+        .banner{
+            height:calc(100vh + 300px);
+        }
+        .banner-img img {
+            width: 36rem;
+            margin-top: 2rem;
+        }
+
+        .btn-banner .botao-wa{
+            width: 100%;
+        }
+        .simulador-area--rodape2{
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: row;
+        }
+        .simulador-area--title2{
+            flex: 2;
+            max-width: 400px;
+        }
+        .simulador-area--simulador{
+            max-width: 370px;
+        }
+    }
+    @media (min-width:415px) and (max-width:768px){
+        .banner-area{
+            justify-content: center;
+            width: 100%;
+        }
+        .banner-info{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            padding: 0;
+        }
+        .banner-int .container{
+            padding: 0.5rem;
+        }
+
+        
+        .banner{
+            height:calc(100vh + 300px);
+        }
+        .banner-img img {
+            width: 26rem;
+            margin-top: 2rem;
+        }
+
+
+        .banner-info--title{
+            font-size: 2.5rem;
+        }
+        .banner-info--subtitle{
+            font-size: 1.5rem;
+        }
+        .banner-area button{
+            width: 100%;
+        }
+        
+        .navegador{
+            display: none;
+        }
+        .navegador-responsivo{
+            width: 100%;
+            position: absolute;
+            top: 5rem;
+            background-color: white;
+            display: none;
+        }
+        .navegador-responsivo nav{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        .navegador-responsivo a{
+            padding: 0.5rem;
+            font-size: 1rem;
+            font-weight: 600;
+        }
+        .navegador-responsivo .button{
+            display: none;
+        }
+        .navegador-responsivo a:hover{
+            cursor: pointer;
+            background-color: #ccc;
+        }
+        .active{
+            display: flex;
+        }
+
+        .btn_menu-responsivo{
+            display: flex;
+        }
+
+        .simulador .container{
+            padding: 00.5rem;
+        }
+
+        .simulador-area{
+            padding: 0rem;
+            padding-bottom: 5px;
+            display: flex;
+            flex-direction: column;
+            justify-content:center ;
+            position: relative;
+            margin: 0;
+            background-color: transparent;
+            box-shadow: none;
+        }
+        .simulador-area--title{
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            margin-top: 1rem;
+        }
+        .simulador-area--simulador{
+            width: 100%;
+            margin: 0%;
+        }
+        .simulador-area--simulador button{
+            width: 100%;
+            font-size: 50%;
+            padding: 0px;
+        }
+
+
+        .block-1{
+            margin-top: rem;
+        }
+        .block-1 img{
+            margin-top: rem;
+            width: 10rem;
+        }
+        .block-2{
+            margin-top: rem;
+        }
+        .block-2 img{
+            margin-top: -3rem;
+            width: 10rem;
+        }
+
+
+
+        .obter-emprestimo--area-esquerda{
+            background-color: ;
+            width: 100%;
+            padding-left: 10px
+        }
+        .obter-emprestimo--area-esquerda-grid{
+            background-color: ;
+            display: grid;
+            grid-template-columns: 1fr 140px 1fr 140px;
+            width: 100%;
+            margin: 0;
+        }
+
+        
+    
+        .item{
+            
+        }
+        .item1,.item3,
+        .item5,.item7,
+        .item9,.item11{
+            font-size: 3rem;
+            color: #FCB813;
+            font-weight: 900;
+            margin-left: 0px;
+        }
+        .item2,.item4,
+        .item6,.item8,
+        .item10,.item12{
+            color: #23416e;
+            font-size: 12px;
+            margin-left: -10px;
+        }
+
+        h5::after {
+            content: url(../img/icon/seta-baixo415.png);
+            margin-left: 0px;
+            position: absolute;
+            right: 10px;
+        }
+
+        .chevrondown {
+            margin-top: -6px;
+            position: relative;
+            border: solid rgb(10, 11, 66);
+            border-radius: 2px;
+            border-width: 0 2px 2px 0;
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            transform: rotate(45deg);
+          }
+
+          .simulador-area--rodape2{
+            padding: 1.5rem;
+          }
+
+    }
+
+    @media (min-width:415px) and (max-width:530px) {
+
+        .block-2{
+            margin-top: 2rem;
+        }
+
+
+    }
+
+
+
+    @media (max-width:414px){
+        #menu{
+            display: none;
+        }
+        .navegador{
+            display: none;
+        }
+        .navegador-responsivo{
+            width: 100%;
+            position: absolute;
+            top: 5rem;
+            background-color: white;
+            display: none;
+        }
+        .navegador-responsivo nav{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        .navegador-responsivo a{
+            padding: 0.5rem;
+            font-size: 1rem;
+            font-weight: 600;
+        }
+        .navegador-responsivo .button{
+            display: none;
+        }
+        .navegador-responsivo a:hover{
+            cursor: pointer;
+            background-color: #ccc;
+        }
+        .active{
+            display: flex;
+        }
+
+        .btn_menu-responsivo{
+            display: flex;
+        }
+
+
+        /* Banner*/
+        
+        .banner-info{
+            background-color: ;
+            margin-left: 1rem;
+            margin-right: 1rem;
+            width: 100%;
+        }
+        .banner-info--title{
+            width: 100%;
+            font-size: 2.5rem;
+        }
+        .banner-info--subtitle {
+            width: 100%;
+            font-size: 1.5rem;
+        }
+
+
+
+
+
+        /* Sacar*/
+        .block-2{
+            margin-top: 40%;
+        }
+        .block-2--title,.block-1--title{
+            margin-left: 10px;
+        }
+        .block-1 span{
+            font-size: 12px;
+        }
+        .block-2 span{
+            font-size: 12px;
+        }
+
+        .obter-emprestimo--area-esquerda{
+            width: 100%;
+            padding: 1rem;
+        }
+        .obter-emprestimo--area-esquerda-grid{
+            background-color:;
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            margin-left: 0%;
+            padding: 1rem;
+        }
+
+        .item{
+        
+        }
+        .item1,.item3,
+        .item5,.item7,
+        .item9,.item11{
+            font-size: 4rem;
+            color: #FCB813;
+            font-weight: 900;
+            margin-left: -10px;
+        }
+        .item2,.item4,
+        .item6,.item8,
+        .item10,.item12{
+            color: #23416e;
+            font-size: 1rem
+        }
+        h5{
+            margin-right: 3px;
+        }
+        h5::after {
+            content: url(../img/icon/seta-baixo415.png);
+            margin-left: 0px;
+            position: absolute;
+            right: 10px;
+        }
+
+        
+    .depoismentos--ares-titulo1{
+        font-size: 1rem;
+    }
+
+    .chevrondown {
+        margin-top: -6px;
+        position: relative;
+        border: solid rgb(10, 11, 66);
+        border-radius: 2px;
+        border-width: 0 2px 2px 0;
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        transform: rotate(45deg);
+      }
+
+      .simulador-area--rodape2{
+        padding: 1.5rem;
+      }
+
+
+
+    }
+    @media (max-width:375px){
+        
+        .logo a img{
+            width: 5rem;
+        }
+        
+        .banner{
+            height:calc(100vh + 50px);
+        }
+        .banner-img img {
+            width: 19rem;
+            margin-top: 2rem;
+        }
+        
+        .banner-info--title{
+            font-size: 2rem;
+        }
+
+        .simulador .container{
+            padding: 0rem;
+            margin-top: 2rem;
+        }
+
+        .banner-int .container{
+            padding: 0;
+        }
+
+        .banner-info--subtitle{
+            font-size: 1rem;
+        }
+
+
+        .simulador-area{
+            padding: 0rem;
+            padding-bottom: 5px;
+            display: flex;
+            flex-direction: column;
+            justify-content:center ;
+            position: relative;
+            margin: 0;
+            background-color: transparent;
+            box-shadow: none;
+        }
+        .simulador-area--title{
+            font-size: 90%;
+            margin-bottom: 1rem;
+            margin-top: 1rem;
+        }
+        .simulador-area--simulador{
+            width: 100%;
+            margin: 0%;
+        }
+        .simulador-area--simulador button{
+            width: 100%;
+            font-size: 50%;
+            padding: 0px;
+        }
+
+        .block-1--title{
+            margin: 5px;
+            font-size: 100%;
+        }
+        .block-1--title span{
+            font-size: 50%;
+        }
+
+        .block-1 img{
+            margin-top: -3rem;
+            width: 10rem;
+        }
+        .block-2 img{
+            margin-top: -3rem;
+            width: 10rem;
+        }
+
+        .vantagens-exclusivas .main-title{
+            font-size: 1.5rem;
+        }
+
+
+        .vantagens-exclusivas .container{
+            align-items: center;
+            text-align: center;
+        }
+
+        .depoimentos--area{
+            width: 100%;
+        }
+        .depoimentos--area-d1{
+            margin: 0.5rem;
+            height: auto;
+            min-width: 252px;
+        }
+        .informacoes{
+            margin-left: -10px;
+            font-size: 12px;
+        }
+
+        .chevrondown {
+            margin-top: -6px;
+            position: relative;
+            border: solid rgb(10, 11, 66);
+            border-radius: 2px;
+            border-width: 0 2px 2px 0;
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            transform: rotate(45deg);
+          }
+    }
